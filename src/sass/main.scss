@@ -1,5 +1,20 @@
-.div {
-  width: 1rem;
-  height: 1rem;
-  background: black;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(241, 184, 109, 1) 0%,
+    rgba(191, 76, 119, 1) 62%
+  );
 }

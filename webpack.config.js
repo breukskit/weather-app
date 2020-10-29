@@ -20,7 +20,7 @@ module.exports = {
     contentBase: './public',
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.ts', '.js', '.json'],
   },
   output: {
     filename: 'bundle.js',
