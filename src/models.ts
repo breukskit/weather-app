@@ -50,7 +50,8 @@ export class Weather {
     public _city: string,
     public _weather: string,
     public _weatherIconUrl: string,
-    public _tempUnit = 'celsius'
+    public _humidity: number,
+    public _windCond: number
   ) {}
   getCelius() {
     return (this._temp - 273.15).toFixed(1);

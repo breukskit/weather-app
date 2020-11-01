@@ -11,3 +11,15 @@ export const weatherDom = document.getElementById(
 export const weatherIconDom = document.getElementById(
   'icon'
 ) as HTMLImageElement;
+export const humidityDom = document.getElementById(
+  'humidity'
+) as HTMLParagraphElement;
+export const windConDom = document.getElementById(
+  'wind'
+) as HTMLParagraphElement;
+export const celsiusPicker = document.getElementById(
+  'celsius-picker'
+) as HTMLButtonElement;
+export const fahrenheitPicker = document.getElementById(
+  'fahrenheit-picker'
+) as HTMLButtonElement;

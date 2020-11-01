@@ -11,18 +11,43 @@
   </head>
   <body>
     <div class="container">
-      <form id="form">
-        <input type="text" id="input" placeholder="Search by city or country" />
-        <button type="submit">Search</button>
-      </form>
-      <h2 id="location"></h2>
-      <p id="temp"></p>
-      <p id="weather"></p>
-      <img
-        id="icon"
-        src="http://openweathermap.org/img/wn/03d@2x.png"
-        alt="Weather icon"
-      />
+      <header class="header">
+        <h2 id="location">City, Country</h2>
+        <form id="form">
+          <input
+            type="text"
+            id="input"
+            placeholder="Search by city or country..."
+          />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </header>
+
+      <main class="main">
+        <div class="top">
+          <img
+            id="icon"
+            src="http://openweathermap.org/img/wn/03d@2x.png"
+            alt="Weather icon"
+          />
+          <p id="temp">Temperature</p>
+        </div>
+        <div class="bottom">
+          <p id="weather">Weather description</p>
+          <div class="conditions-container">
+            <i class="fas fa-wind"></i>
+            <p id="wind">Wind conditions</p>
+          </div>
+          <div class="conditions-container">
+            <i class="fas fa-tint"></i>
+            <p id="humidity">Humidity</p>
+          </div>
+        </div>
+      </main>
+      <div class="temp-units-container">
+        <button id="celsius-picker">&deg;C</button>
+        <button id="fahrenheit-picker">&deg;F</button>
+      </div>
     </div>
     <script src="bundle.js"></script>
   </body>

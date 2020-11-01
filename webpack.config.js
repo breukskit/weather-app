@@ -18,6 +18,8 @@ module.exports = {
   },
   devServer: {
     contentBase: './public',
+    inline: true,
+    hot: true,
   },
   resolve: {
     extensions: ['.ts', '.js', '.json'],
